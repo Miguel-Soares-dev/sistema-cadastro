@@ -85,12 +85,16 @@
     </style>
 </head>
 <body>
-    <form method="POST" action="/cadastrar">
-        <input type="text" name="nome" placeholder="Seu nome">
-        <input type="email" name="email" placeholder="Seu email">
-        <input type="password" name="senha" placeholder="Sua senha">
-        <button type="submit">cadastrar</button>
-    </form>
-    
+    <body>
+        <div class="container">
+            <h1>Criar conta</h1>
+            <form method="POST" action="/cadastrar">
+                <input type="text" name="nome" placeholder="Seu nome">
+                <input type="email" name="email" placeholder="Seu email">
+                <input type="password" name="senha" placeholder="Sua senha">
+                <button type="submit">Cadastrar</button>
+            </form>
+            <p>Já tem conta? <a href="/login">Entrar</a></p>
+        </div>
 </body>
 </html>
