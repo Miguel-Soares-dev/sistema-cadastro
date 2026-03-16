@@ -4,6 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 40px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px 16px;
+            margin-bottom: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.07);
+            color: white;
+            font-size: 15px;
+            outline: none;
+        }
+
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        input:focus {
+            border-color: #e94560;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #e94560;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #c73652;
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.5);
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        p a {
+            color: #e94560;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <form method="POST" action="/cadastrar">
